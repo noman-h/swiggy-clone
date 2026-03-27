@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .s1{
+        height: 110vh;
+        background-color: rgb(253, 99, 10);
+    }
+    .navbar{
+        padding: 40px 160px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navicon{
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .navicon img{
+        padding: 5px;
+        background-color: white;
+        border-radius: 10px;
+        height: 35px;
+        width: 40px;
+        margin-right: 15px;
+    }
+    .navs2{
+        padding-top: 15px;
+    }
+    .n1{
+        color: white;
+        align-items: center;
+        margin-right: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        
+    }
+    .n2{
+        margin-right: 20px;
+        color: white;
+        align-items: center;
+        padding: 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        border: 1px solid white;
+        border-radius: 10px;
+
+    }
+    .n3{
+        color: white;
+        align-items: center;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 10px;
+        background-color: black;
+    }
+     .s1banner{
+        padding: 40px 160px;
+     }
+     .banner1{
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        font-weight: bold;
+     }
+     .search{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+     }
+     .inputpin{
+        margin-right: 30px;
+        padding: 10px;
+        height: 40px;
+        width: 250px;
+        background-color: white;
+        color: rgb(255, 98, 0);
+        font-size: 25px;
+        border-radius: 20px;
+        align-items: center;
+        display: flex;
+     }
+     .inputpin input{
+        margin-left: 10px;
+        border-style: none;
+        width: 300px;
+        font-size: 16px;
+     }
+     .inputsearch{
+        height: 40px;
+        width: 500px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 20px;
+        align-items: center;
+        display: flex;
+        color: gray;
+        justify-content: space-between;
+     }
+     .inputsearch input{
+        border-style: none;
+        width: 300px;
+        font-size: 16px;
+     }
+     .bannerop{
+        padding-left: 200px;
+        padding-right: 200px;
+        display: flex;
+     }
+     .bo{
+        height: 340px;
+        width: 380px;
+        border-radius: 20px;
+     }
+     .s2{
+        padding: 60px 125px;
+     }
+     .frow{
+        display: flex;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+     }
+     .bt{
+        border: none;
+        background: none;
+     }
+     .bt img{
+        height: 180px;
+        width: 184px;
+     }
+     .gros{
+        padding-top: 40px;
+     }
+     .grow{
+        padding-top: 40px;
+        gap: 30px;
+        display: flex;
+        overflow-x: scroll;
+        scrollbar-width: none;
+     }
+     .grow a img{
+        height: 180px;
+        width: 150px;
+     }
+     .adbanner img{
+        height: 100%;
+        width: 100%;
+     }
+     .cities{
+        padding: 20px 200px;
+     }
+     .c1{
+        display: flex;
+        gap: 20px;
+     }
+     .c1 div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 300px;
+        border: 1px solid #555;
+        border-radius: 10px;
+        margin-top: 13px;
+     }
+     .c1 div a{
+        text-decoration: none;
+        color: #555;
+     }
+     .footer{
+    background: #f1f1f5;
+    padding: 40px 160px;
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.footer-logo img{
+    border-radius: 10px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p{
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.footer-section a{
+    text-decoration: none;
+    color: #444;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.footer-section a:hover{
+    color: #ff6d00;
+}
+.footers2{
+    display: flex;
+    padding: 40px 160px;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.footers2 p{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+     /* ---------------- TABLET ---------------- */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 30px 30px;
+    }
+    .n1, .n2{
+        display: none;
+    }
+    .s1banner {
+        padding: 30px 60px;
+    }
+    .banner1 {
+        font-size: 40px;
+    }
+    .search {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .inputpin,
+    .inputsearch {
+        width: 80%;
+    }
+    .bannerop {
+        padding: 0px 60px;
+        justify-content: center;
+        gap: 20px;
+    }
+    .bo {
+        width: 100%;
+        height: auto;
+    }
+    .s2{
+        padding: 30px 30px;
+        background-color: white;
+    }
+    .cities{
+        padding: 30px 30px;
+    }
+     .c1 a{
+        margin-left: 5px;
+    }
+    .footer{
+        padding: 30px 30px;
+    }
+    .footers2{
+        padding: 30px 30px;
+    }
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 30px;
+        gap: 15px;
+        text-align: center;
+    }
+    .navs2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 0px;
+    }
+    .n1, .n2{
+        display: none;
+    }
+    .navicon img {
+        height: 30px;
+        width: 35px;
+    }
+
+    .s1banner {
+        padding: 20px;
+    }
+    .banner1 {
+        font-size: 28px;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+    .inputpin,
+    .inputsearch {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+    }
+    .inputpin input,
+    .inputsearch input {
+        width: 100%;
+    }
+
+    .bannerop {
+        padding: 0px 20px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .bo{
+        width: 100%;
+        height: auto;
+    }
+    .s2{
+        padding: 30px 30px;
+        background-color: white;
+    }
+    .cities{
+        padding: 30px 30px;
+    }
+    .c1 a{
+        margin-left: 5px;
+        font-size: 10px;
+    }
+     .footer{
+        padding: 30px 30px;
+    }
+    .footers2{
+        padding: 30px 30px;
+    }
+}
+</style>
+<body>
+    <div class="s1">
+        <div class="navbar">
+            <div><a class="navicon" href=""><img src="https://cdn.iconscout.com/icon/free/png-512/free-swiggy-logo-icon-svg-download-png-1369418.png?f=webp&w=512" alt="">Swiggy</a></div>
+            <div class="navs2">
+                <span><a class="n1" href="">Swiggy Corporate</a></span>
+                <span><a class="n1" href="">Partner with Us</a></span>
+                <span><a class="n2" href="">Get the App ↗</a></span>
+                <span><a class="n3" href="">Sign in</a></span>
+            </div>
+        </div>
+        <div class="s1banner">
+            <div class="banner1">Order food & groceries. Discover <br> best restaurants. Swiggy it!</div>
+            <div class="search">
+                <div class="inputpin"><i class="fa-solid fa-location-dot"></i><input type="text" placeholder="Enter Your Delivery location"></div>
+                <div class="inputsearch"><input type="text" placeholder="Search for restaurant, item or more"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div>
+        <div class="bannerop">
+               <a href=""><img class="bo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.png" alt="">
+                </a>
+               <a href=""><img class="bo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/b5c57bbf-df54-4dad-95d1-62e3a7a8424d_IM3BU.png" alt=""></a>
+              <a href=""><img class="bo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.png" alt=""></a>
+        </div>
+        <div class="s2">
+        <div>
+            <h2>Order our best food options</h2>
+           <div class="frow">
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pizza.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pizza.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Biryani.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Cake.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Burger.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Burger.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Burger.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Burger.png" alt=""></button></div>
+           </div>
+           <div class="frow">
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pizza.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pizza.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Biryani.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Cake.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Burger.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Burger.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Burger.png" alt=""></button></div>
+            <div><button class="bt"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Burger.png" alt=""></button></div>
+           </div>
+           </div>
+           <div class="gros">
+              <h2>Shop groceries on instamart</h2>
+              <div class="grow">
+                    <a href=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/43e3c412-4ca9-4894-82ba-24b69da80aa6_06c0d2a9-804c-4bf1-8725-7ebd234e144a" alt=""></a>
+                    <a href=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/a1493d81-f21e-415f-9875-f78383590fc2_9f3f0f68-4fbe-40f6-8f5d-5472a03469bd" alt=""></a>
+                    <a href=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/6dea6676-ce07-45e6-b60c-a099c01c5462_6d33297a-5828-48ff-aa2a-c052ae97669e" alt=""></a>
+                    <a href=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/097900ca-5d2d-4bb0-8e54-aede1e58dfd8_eab3796c-ac17-48fd-bfc7-6356c6f89783" alt=""></a>
+                    <a href=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/64714677-e6b6-41c1-b533-6644d43e55f7_76ef86af-0483-41a5-8387-37901bf4ca6a" alt=""></a>
+                    <a href=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/8e48ee13-3b51-49ea-b765-5cf3e7a97c04_695caa8a-c2f6-4a1a-9672-53213fea21aa" alt=""></a>
+                    <a href=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/8e48ee13-3b51-49ea-b765-5cf3e7a97c04_695caa8a-c2f6-4a1a-9672-53213fea21aa" alt=""></a>
+                    <a href=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/8e48ee13-3b51-49ea-b765-5cf3e7a97c04_695caa8a-c2f6-4a1a-9672-53213fea21aa" alt=""></a>
+                </div>  
+           </div>
+           </div>
+            <div class="adbanner">
+        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/seo/App_download_banner.png" alt=" ad banner">
+    </div>
+    <div class="cities">
+       <h2>Cities with food delivery</h2>
+       <div class="c1">
+        <div><a href="">order fooed online in Bangalore</a></div>
+        <div><a href="">order fooed online in udaipur</a></div>
+        <div><a href="">order fooed online in delhi</a></div>
+        <div><a href="">order fooed online in jaipur</a></div>
+       </div>
+       <div class="c1">
+        <div><a href="">order fooed online in jodhpur</a></div>
+        <div><a href="">order fooed online in pune</a></div>
+        <div><a href="">order fooed online in mumbai</a></div>
+        <div><a href="">order fooed online in hyderabad </a></div>
+       </div>
+       </div>
+    <div class="cities">
+       <h2>Cities with groceries delivery</h2>
+       <div class="c1">
+        <div><a href="">order fooed online in Bangalore</a></div>
+        <div><a href="">order fooed online in udaipur</a></div>
+        <div><a href="">order fooed online in delhi</a></div>
+        <div><a href="">order fooed online in jaipur</a></div>
+       </div>
+       <div class="c1">
+        <div><a href="">order fooed online in jodhpur</a></div>
+        <div><a href="">order fooed online in pune</a></div>
+        <div><a href="">order fooed online in mumbai</a></div>
+        <div><a href="">order fooed online in hyderabad </a></div>
+       </div>
+       </div>
+       <footer class="footer">
+    <div class="footer-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png" alt="Swiggy Logo">
+        <p>© 2025 Swiggy Limited</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Company</h3>
+        <a href="#">About Us</a>
+        <a href="#">Swiggy Corporate</a>
+    </div>
+
+    <div class="footer-section">
+        <h3>Contact us</h3>
+        <a href="#">Help & Support</a>
+        <a href="#">Partner With Us</a>
+    </div>
+
+    <div class="footer-section">
+        <h3>Available in:</h3>
+        <a href="#">Bangalore</a>
+        <a href="#">Gurgaon</a>
+    </div>
+
+    <div class="footer-section">
+        <h3>Life at Swiggy</h3>
+        <a href="#">Explore With Swiggy</a>
+        <a href="#">Swiggy News</a>
+    </div>
+    </footer>
+    <hr>
+    <div class="footers2">
+        <p>For better experience, download the Swiggy app now</p>
+        <a href="#"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv" alt=""></a>
+        <a href="#"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl" alt=""></a>
+    </div>
+    </div>
+     
+    </div>
+    </div>
+</body>
+</html>
